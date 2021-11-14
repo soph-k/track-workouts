@@ -1,18 +1,18 @@
 const router = require("express").Router();
 const WorkoutModel = require("../models");
 
-
 //get workouts
 router.get("/api/workouts", (req, res) => {
-  WorkoutModel.Workout.find({}).then(dataSet => {
+  WorkoutModel.Workout.find({})
+  .then(dataSet => {
     dataSet.forEach(set => {
       let total = 0;
-      set.exercises.forEach(e => {
-          total += e.duration;
+      set.exercises.forEach(event => {
+        total += event.duration;
       });
       set.totalDuration = total;
     });
-    res.json(WorkoutModel);
+    res.json(dataSet);
   }).catch(err => {
     res.json(err);
   });
@@ -20,7 +20,8 @@ router.get("/api/workouts", (req, res) => {
 
 
 router.get("/api/workouts/range", (req, res) => {
-  WorkoutModel.Workout.find({}).then(dataSet => {
+  WorkoutModel.Workout.find({})
+  .then(dataSet => {
     res.json(dataSet);
   }).catch(err => {
     res.json(err);
@@ -30,7 +31,8 @@ router.get("/api/workouts/range", (req, res) => {
 
 //create workout
 router.post("/api/workouts", ({ body }, res) => {
-  WorkoutModel.Workout.create(body).then((dataSet => {
+  WorkoutModel.Workout.create(body)
+  .then((dataSet => {
     res.json(dataSet);
   }
   )).catch(err => {
@@ -46,12 +48,12 @@ router.put("/api/workouts/:id", (req, res) => {
       $inc: { totalDuration: req.body.duration },
       $push: { exercises: req.body }
     },
-    { new: true }).then(dataSet => {
-        res.json(dataSet);
+    { new: true })
+    .then(dataSet => {
+      res.json(dataSet);
     }).catch(err => {
-        res.json(err);
+      res.json(err);
     });
-
 });
 
 module.exports = router;
