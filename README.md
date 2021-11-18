@@ -1,38 +1,36 @@
 # Track Workouts
 
-![license](https://img.shields.io/badge/license-MIT-red)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
 <p align="center">
-    <img src="https://img.shields.io/github/repo-size/soph-k/generate_team_profile"/>
-    <img src="https://img.shields.io/github/last-commit/soph-k/generate_team_profile"/>
+    <img src="https://img.shields.io/github/repo-size/soph-k/track-workout"/>
+    <img src="https://img.shields.io/github/last-commit/soph-k/track-workout"/>
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/Javascript-yellow"/>
-    <img src="https://img.shields.io/badge/jQuery-gray"/>
-    <img src="https://img.shields.io/badge/-node.js-red"/>
-    <img src="https://img.shields.io/badge/-json-blue" />
-    <img src="https://img.shields.io/badge/-inquirer-pink"/>
+    <img src="https://img.shields.io/badge/HTML-yellow"/>
+    <img src="https://img.shields.io/badge/CSS-gray"/>
+    <img src="https://img.shields.io/badge/-Javascript-red"/>
+    <img src="https://img.shields.io/badge/NodeJS-yellow"/>
+    <img src="https://img.shields.io/badge/Express-pink"/>
+    <img src="https://img.shields.io/badge/-MongoDB-blue" />
+    <img src="https://img.shields.io/badge/-Heroku-purple"/>
 </p>
    
 
 # Description
-A simple script based on node.js using the inquirer - npm to generate 
-an HTML page that contains information of multiple team members. 
-Jest testing was used to anaylzed the functionality of the script.
+The Track Workout app helps users track their exercises. Users add new workouts or update their current workout, ranging from resistance workouts to cardio workout with specific user values for each category; duration, distance, weight, reps, and sets. The Track Workout is a NodeJS based application that uses MongoDB and is deployed on Heroku 
 
 
 ## Table of Contents
 - [Overview](#overview)
 - [Authors](#authors)
+- [Demo](#demo)
 - [Preview](#preview)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Test](#test)
 - [Contribution](#contribution)
-- [License](#license)
-- [Bugs](#bugs)
+
 
 
 ## Authors
@@ -41,43 +39,34 @@ Jest testing was used to anaylzed the functionality of the script.
 - Version 1.1
 
 
+## Demo
+[Demo Heroku](https://sophk-track-workout.herokuapp.com/)
+
+
 ## Preview
-![Preview](./assets/images/demo.gif)
+![Preview 1](./public/images/screenshot-1.png)
+![Preview 2](./public/images/screenshot-2.png)
+![Preview 3](./public/images/screenshot-3.png)
 
 
 ## Features
+- HTML
+- CSS
 - Javascript 
 - Node.js 
-    - Inquirer.js
-    - Jest Testing
+    - Express
+- MongoDB
 
 
+## Repo
+[Repo](https://github.com/soph-k/track-workouts)
 
 ## Installation
-The Generate Team Profile is based on the Inquirer npm. 
-Before using commands please be sure Inquirer npm is installed. 
+Before using commands please be sure the NodeJS packages are installed. 
 If not, run the following commands in the following order: 
-
 ```
 npm init
 ```
-```
-npm install inquirer
-```
-
-
-## Usage
-Once all of the files and Inquirer npm is set up, 
-begin generating your README.md file by using the following 
-command in the terminal of your project and answer each question.
-
-```
-node index.js
-```
-
-
-## Test
-Each aspect of the Generate Team Profile project was tested using Jest. 
 
 
 ## Contribution
@@ -95,6 +84,4 @@ For questions about this project, please review my GitHub repo at [soph-k](https
 #### Bugs 
 - No known bugs.
 
-
--- html/css
 
