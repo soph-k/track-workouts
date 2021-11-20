@@ -19,7 +19,7 @@
    
 
 # Description
-The Track Workout app helps users track their exercises. Users add new workouts or update their current workout, ranging from resistance workouts to cardio workout with specific user values for each category; duration, distance, weight, reps, and sets. The Track Workout is a NodeJS based application that uses MongoDB and is deployed on Heroku 
+The Track Workout app helps users track their exercises. Users add new workouts or update their current workout, ranging from resistance workouts to cardio workout with specific user values for each category, duration, distance, weight, reps, and sets. The Track Workout is a NodeJS based application that uses MongoDB and is deployed on Heroku Cloud Servers.
 
 
 ## Table of Contents
